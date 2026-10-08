@@ -120,9 +120,8 @@ $solution_blueprints = [
   <div class="container">
     <div class="page-hero-header reveal">
       <div class="page-hero-eyebrow">
-        <span class="code">[ BLUEPRINTS ]</span>
         <span class="live-indicator"></span>
-        <span>Proven System Architectures</span>
+        <span>Enterprise Solutions &middot; Battle-Tested Blueprints</span>
       </div>
       <h1 class="page-hero-title">
         Pre-Architected Solutions for <br>

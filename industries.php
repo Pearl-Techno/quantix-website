@@ -20,9 +20,8 @@ require_once __DIR__ . '/includes/header.php';
   <div class="container">
     <div class="page-hero-header reveal">
       <div class="page-hero-eyebrow">
-        <span class="code">[ INDUSTRIES ]</span>
         <span class="live-indicator"></span>
-        <span>Sector-Specific Digital Systems</span>
+        <span>Sector Expertise &middot; Kenya & East Africa</span>
       </div>
       <h1 class="page-hero-title">
         Digital Systems Calibrated for <br>

@@ -20,9 +20,8 @@ require_once __DIR__ . '/includes/header.php';
   <div class="container">
     <div class="page-hero-header reveal">
       <div class="page-hero-eyebrow">
-        <span class="code">[ ABOUT QUANTYX ]</span>
         <span class="live-indicator"></span>
-        <span>Systems Engineering &middot; Nairobi, Kenya</span>
+        <span>Institutional Profile &middot; Nairobi, Kenya</span>
       </div>
       <h1 class="page-hero-title">
         Building the Practical Digital Foundations <br>

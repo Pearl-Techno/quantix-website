@@ -21,7 +21,6 @@ require_once __DIR__ . '/includes/mockups.php';
   <div class="container">
     <div class="page-hero-header reveal">
       <div class="page-hero-eyebrow">
-        <span class="code">[ PRODUCTS ]</span>
         <span class="live-indicator"></span>
         <span>Proprietary Software Systems &middot; Ready for Deployment</span>
       </div>

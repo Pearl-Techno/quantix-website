@@ -81,9 +81,8 @@ $prefill_industry = $_GET['industry'] ?? '';
   <div class="container">
     <div class="page-hero-header reveal">
       <div class="page-hero-eyebrow">
-        <span class="code">[ ENGAGE ]</span>
         <span class="live-indicator"></span>
-        <span>Technical Discovery &middot; Senior Engineering Team</span>
+        <span>Technical Discovery & Architecture Consultation</span>
       </div>
       <h1 class="page-hero-title">
         Let’s Build Something <br>

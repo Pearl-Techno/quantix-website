@@ -21,9 +21,8 @@ require_once __DIR__ . '/includes/mockups.php';
   <div class="container">
     <div class="page-hero-header reveal">
       <div class="page-hero-eyebrow">
-        <span class="code">[ CASE STUDIES ]</span>
         <span class="live-indicator"></span>
-        <span>Production Proven &middot; Measured Outcomes</span>
+        <span>Case Studies &middot; Measured Production Outcomes</span>
       </div>
       <h1 class="page-hero-title">
         We Don't Just Talk About Technology.<br>
@@ -59,7 +58,7 @@ require_once __DIR__ . '/includes/mockups.php';
             </div>
 
             <div style="font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 10px;">
-              // PRODUCTION STACK
+              Production Tech Stack:
             </div>
             <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px;">
               <?php foreach ($cs['tech_stack'] as $tech): ?>

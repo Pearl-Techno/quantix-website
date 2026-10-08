@@ -19,7 +19,6 @@ require_once __DIR__ . '/includes/mockups.php';
 <section class="hero hero-stacked" id="hero">
   <div class="hero-bg-layer">
     <img src="<?= asset('images/visual/hero-network.jpg') ?>" alt="Quantyx Network Architecture Visual" class="hero-visual-bg" loading="eager" />
-    <canvas id="hero-canvas" class="hero-canvas"></canvas>
     <div class="hero-vignette"></div>
     <div class="hero-bg-grid"></div>
     <div class="hero-falloff-glow"></div>
@@ -29,9 +28,8 @@ require_once __DIR__ . '/includes/mockups.php';
     <!-- Top: Value Proposition, Headline & Authoritative CTAs -->
     <div class="hero-header-block">
       <div class="eyebrow hero-eyebrow">
-        <span class="eyebrow-prefix">[ NAIROBI · EST. 2024 ]</span>
         <span class="live-indicator"></span>
-        <span class="eyebrow-label">Systems engineering for regulated industries</span>
+        <span>Systems Engineering &middot; Nairobi, Kenya</span>
       </div>
 
       <h1 class="hero-headline">
@@ -56,15 +54,15 @@ require_once __DIR__ . '/includes/mockups.php';
       <div class="hero-trust-row reveal-stagger">
         <div class="hero-trust-item">
           <span class="trust-dot"></span>
-          <span><strong>Kenyan Statutory Rules:</strong> Built-in (PAYE, SHA, NSSF Tier I/II, Housing Levy)</span>
+          <span><strong>Kenyan Statutory Rules:</strong> Built-in (PAYE, SHA 2.75%, NSSF Tier I/II, Housing Levy)</span>
         </div>
         <div class="hero-trust-item">
           <span class="trust-dot"></span>
-          <span><strong>Safaricom Daraja 2.0:</strong> Idempotent payment switch</span>
+          <span><strong>Safaricom Daraja 2.0:</strong> Idempotent switch with Redis deduplication</span>
         </div>
         <div class="hero-trust-item">
           <span class="trust-dot"></span>
-          <span><strong>Enterprise SLA:</strong> Dedicated stewardship & IP ownership</span>
+          <span><strong>Enterprise SLA:</strong> Kenya Data Protection Act 2019 & 100% Client IP Ownership</span>
         </div>
       </div>
     </div>
@@ -75,21 +73,21 @@ require_once __DIR__ . '/includes/mockups.php';
         <div class="console-nav-bar">
           <div class="console-nav-tabs">
             <button class="console-tab-btn active" data-console="c-preview-pearlpay" type="button">
-              <span class="tab-code">PP-01</span>
-              <span class="tab-name">Statutory HRMS</span>
+              <span class="tab-name">Pearl Pay HRMS</span>
+              <span class="tab-code">Statutory Payroll</span>
             </button>
             <button class="console-tab-btn" data-console="c-preview-quantpay" type="button">
-              <span class="tab-code">QP-02</span>
-              <span class="tab-name">Payment Switch</span>
+              <span class="tab-name">Quantpay Switch</span>
+              <span class="tab-code">Daraja 2.0 & eTIMS</span>
             </button>
             <button class="console-tab-btn" data-console="c-preview-healthpoint" type="button">
-              <span class="tab-code">HP-03</span>
-              <span class="tab-name">Clinical EMR</span>
+              <span class="tab-name">Health Point HMS</span>
+              <span class="tab-code">Clinical EMR</span>
             </button>
           </div>
           <div class="console-telemetry-tag">
             <span class="status-pulse-dot"></span>
-            <span>PRODUCTION ACTIVE</span>
+            <span>SYSTEMS ACTIVE</span>
           </div>
         </div>
 

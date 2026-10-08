@@ -10,9 +10,9 @@ require_once __DIR__ . '/icons.php';
   <div class="container">
     <div class="cta-banner-wrapper reveal">
       <img src="<?= asset('images/visual/cta-fiber.jpg') ?>" alt="Quantyx Infrastructure Fiber Optic" class="cta-visual-bg" loading="lazy" />
-      <div class="eyebrow" style="background: rgba(0, 212, 255, 0.1); margin-bottom: 20px;">
+      <div class="eyebrow">
         <span class="live-indicator"></span>
-        Ready to Build Mission-Critical Infrastructure?
+        <span>Mission-Critical Digital Infrastructure</span>
       </div>
       <h2 class="cta-banner-title">
         Have a System That Needs to Be <span class="text-cyan">Engineered?</span>

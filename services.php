@@ -20,9 +20,8 @@ require_once __DIR__ . '/includes/header.php';
   <div class="container">
     <div class="page-hero-header reveal">
       <div class="page-hero-eyebrow">
-        <span class="code">[ CAPABILITIES ]</span>
         <span class="live-indicator"></span>
-        <span>Outcome-Driven Systems Engineering</span>
+        <span>Enterprise Engineering &middot; Production Capabilities</span>
       </div>
       <h1 class="page-hero-title">
         Enterprise Systems Engineered for <br>
