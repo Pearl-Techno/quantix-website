@@ -33,7 +33,7 @@ require_once __DIR__ . '/includes/mockups.php';
       </div>
 
       <h1 class="hero-headline">
-        Infrastructure for the institutions <br class="hero-br-desktop">Kenya runs on.
+        Infrastructure for the institutions Kenya runs on.
       </h1>
 
       <p class="hero-subhead">
@@ -54,15 +54,24 @@ require_once __DIR__ . '/includes/mockups.php';
       <div class="hero-trust-row reveal-stagger">
         <div class="hero-trust-item">
           <span class="trust-dot"></span>
-          <span><strong>Kenyan Statutory Rules:</strong> Built-in (PAYE, SHA 2.75%, NSSF Tier I/II, Housing Levy)</span>
+          <div class="trust-content">
+            <strong>Kenyan Statutory Rules</strong>
+            <span class="trust-detail">Built-in (PAYE, SHA 2.75%, NSSF Tier I/II, Housing Levy)</span>
+          </div>
         </div>
         <div class="hero-trust-item">
           <span class="trust-dot"></span>
-          <span><strong>Safaricom Daraja 2.0:</strong> Idempotent switch with Redis deduplication</span>
+          <div class="trust-content">
+            <strong>Safaricom Daraja 2.0</strong>
+            <span class="trust-detail">Idempotent switch with Redis deduplication</span>
+          </div>
         </div>
         <div class="hero-trust-item">
           <span class="trust-dot"></span>
-          <span><strong>Enterprise SLA:</strong> Kenya Data Protection Act 2019 & 100% Client IP Ownership</span>
+          <div class="trust-content">
+            <strong>Enterprise SLA</strong>
+            <span class="trust-detail">Kenya Data Protection Act 2019 &amp; 100% Client IP Ownership</span>
+          </div>
         </div>
       </div>
     </div>

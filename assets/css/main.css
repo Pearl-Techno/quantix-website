@@ -117,14 +117,23 @@ button, input, select, textarea {
   font: inherit;
 }
 
-/* Layout Utilities */
+/* Layout Utilities — Expansive Widescreen Scales */
 .container {
   width: 100%;
-  max-width: 1260px;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: clamp(24px, 3.5vw, 48px);
+  padding-right: clamp(24px, 3.5vw, 48px);
+}
+
+.container-wide {
+  width: 100%;
+  max-width: 1560px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(24px, 3.5vw, 48px);
+  padding-right: clamp(24px, 3.5vw, 48px);
 }
 
 .section {
@@ -144,7 +153,7 @@ button, input, select, textarea {
 
 /* Headers & Eyebrows */
 .section-header {
-  max-width: 760px;
+  max-width: 880px;
   margin-bottom: 60px;
 }
 
@@ -152,6 +161,10 @@ button, input, select, textarea {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+.section-header.wide {
+  max-width: 1140px;
 }
 
 .eyebrow {
@@ -644,14 +657,14 @@ button, input, select, textarea {
   pointer-events: none;
 }
 
-/* Hero Content Container */
+/* Hero Content Container — Expansive Widescreen Frame */
 .hero-container {
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: 1360px;
+  max-width: 1520px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 clamp(24px, 3.5vw, 48px);
   display: flex;
   flex-direction: column;
   flex: 1 0 auto;
@@ -659,7 +672,7 @@ button, input, select, textarea {
 
 /* Header Text Block (Stacked on Top) */
 .hero-header-block {
-  max-width: 980px;
+  max-width: 1240px;
   margin: 0 auto 52px;
   text-align: center;
   display: flex;
@@ -694,28 +707,22 @@ button, input, select, textarea {
 
 .hero-headline {
   font-family: var(--font-display);
-  font-size: clamp(2.6rem, 5vw, 4.4rem);
+  font-size: clamp(2.85rem, 5.2vw, 4.85rem);
   font-weight: 700;
-  line-height: 1.08;
+  line-height: 1.07;
   letter-spacing: -0.04em;
   color: #FFFFFF;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
+  max-width: 1180px;
   text-align: center;
 }
 
-.hero-br-desktop {
-  display: inline;
-}
-@media (max-width: 768px) {
-  .hero-br-desktop { display: none; }
-}
-
 .hero-subhead {
-  font-size: clamp(1.05rem, 1.25vw, 1.22rem);
+  font-size: clamp(1.08rem, 1.25vw, 1.24rem);
   color: var(--text-secondary);
-  line-height: 1.65;
-  max-width: 760px;
-  margin: 0 auto 32px;
+  line-height: 1.68;
+  max-width: 880px;
+  margin: 0 auto 34px;
   text-align: center;
 }
 
@@ -728,47 +735,79 @@ button, input, select, textarea {
   margin-bottom: 34px;
 }
 
-/* Trust Telemetry Row */
+/* Trust Telemetry Row — Expansive 3-Column Horizontal Grid */
 .hero-trust-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 28px;
-  flex-wrap: wrap;
-  padding-top: 22px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
   width: 100%;
-  max-width: 940px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: left;
 }
 
 .hero-trust-item {
   display: flex;
-  align-items: center;
-  gap: 8px;
-  font-family: var(--font-mono);
-  font-size: 0.785rem;
-  color: var(--text-muted);
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 18px;
+  background: rgba(11, 19, 34, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.hero-trust-item:hover {
+  border-color: rgba(0, 212, 255, 0.3);
+  background: rgba(16, 27, 46, 0.7);
 }
 
 .hero-trust-item .trust-dot {
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background: var(--cyan);
   flex-shrink: 0;
+  margin-top: 5px;
   box-shadow: 0 0 8px var(--cyan);
 }
 
+.hero-trust-item .trust-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
 .hero-trust-item strong {
-  color: var(--text-primary);
-  font-weight: 500;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  letter-spacing: -0.01em;
+}
+
+.hero-trust-item .trust-detail {
+  font-family: var(--font-mono);
+  font-size: 0.775rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+@media (max-width: 1024px) {
+  .hero-trust-row {
+    grid-template-columns: 1fr;
+    max-width: 680px;
+  }
 }
 
 /* ══════════════════════════════════════════════════════════════════
-   HERO COMMANDING CONSOLE STAGE (FULL-WIDTH 1360px ELEVATION)
+   HERO COMMANDING CONSOLE STAGE (FULL-WIDTH EXPANSIVE ELEVATION)
    ══════════════════════════════════════════════════════════════════ */
 .hero-console-stage {
   width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
   position: relative;
   z-index: 3;
@@ -1053,7 +1092,7 @@ button, input, select, textarea {
 }
 
 .page-hero-header {
-  max-width: 880px;
+  max-width: 1040px;
 }
 .page-hero-header.center {
   margin: 0 auto;
@@ -1101,7 +1140,7 @@ button, input, select, textarea {
   font-size: clamp(1.05rem, 1.25vw, 1.22rem);
   color: var(--text-secondary);
   line-height: 1.68;
-  max-width: 800px;
+  max-width: 960px;
 }
 
 /* ══════════════════════════════════════════════════════════════════
