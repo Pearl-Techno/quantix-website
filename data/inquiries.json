@@ -1,0 +1,16 @@
+[
+    {
+        "id": "INQ-89BB73",
+        "created_at": "2026-10-07 15:53:28",
+        "ip": "::1",
+        "name": "Grace Muthoni",
+        "company": "Kilimani Medical Plaza",
+        "email": "grace@kilimanimedical.co.ke",
+        "phone": "+254722334455",
+        "industry": "Healthcare",
+        "type": "Health Point HMS",
+        "timeline": "1 to 3 months",
+        "budget": "KES 1.5M - KES 5M",
+        "details": "We need to digitize our 45-bed outpatient and inpatient clinical triage with WhatsApp AI appointment booking."
+    }
+]

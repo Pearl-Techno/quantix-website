@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="512" height="512">
+  <defs>
+    <linearGradient id="qGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D9FF" />
+      <stop offset="50%" stop-color="#7B6CFF" />
+      <stop offset="100%" stop-color="#00FFA3" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Main shape of the Q lettermark -->
+  <path d="M 50,15 
+           A 35,35 0 1,0 77,72 
+           L 88,83 
+           A 3,3 0 0,0 92,83 
+           L 93,82 
+           A 3,3 0 0,0 93,78 
+           L 82,67 
+           A 35,35 0 0,0 50,15 Z
+           M 50,27 
+           A 23,23 0 1,1 33,69 
+           A 23,23 0 0,1 50,27 Z" 
+        fill="url(#qGrad)" 
+        filter="url(#glow)" />
+  <!-- Core glowing node inside the letter Q -->
+  <circle cx="50" cy="50" r="8" fill="#00D9FF" opacity="0.9" filter="url(#glow)" />
+  <circle cx="50" cy="50" r="3" fill="#ffffff" />
+</svg>
